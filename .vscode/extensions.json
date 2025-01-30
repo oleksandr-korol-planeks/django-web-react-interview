@@ -15,6 +15,7 @@
         "ritwickdey.liveserver",
         "charliermarsh.ruff",
         "yoavbls.pretty-ts-errors",
-        "monosans.djlint"
+        "monosans.djlint",
+        "bibhasdn.django-html"
     ]
 }

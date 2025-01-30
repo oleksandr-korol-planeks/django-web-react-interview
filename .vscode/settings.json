@@ -8,6 +8,9 @@
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+    "[django-html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
   "python.analysis.autoImportCompletions": true,
   "python.autoComplete.extraPaths": ["${workspaceFolder}/django/.venv/", "${workspaceFolder}/django"],
   "python.analysis.include": ["${workspaceFolder}/django"],
