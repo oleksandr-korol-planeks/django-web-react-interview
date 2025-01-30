@@ -12,6 +12,9 @@
         "vunguyentuan.vscode-postcss",
         "esbenp.prettier-vscode",
         "viijay-kr.react-ts-css",
-        "ritwickdey.liveserver"
+        "ritwickdey.liveserver",
+        "charliermarsh.ruff",
+        "yoavbls.pretty-ts-errors",
+        "monosans.djlint"
     ]
 }
