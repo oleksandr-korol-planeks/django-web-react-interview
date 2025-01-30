@@ -1,0 +1,23 @@
+{
+  "name": "My Project",
+  "extensions": [
+        "ms-vscode.live-server",
+        "michelemelluso.code-beautifier",
+        "aaron-bond.better-comments",
+        "vunguyentuan.vscode-css-variables",
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-mermaid",
+        "davidanson.vscode-markdownlint",
+        "vunguyentuan.vscode-postcss",
+        "esbenp.prettier-vscode",
+        "viijay-kr.react-ts-css",
+        "ritwickdey.liveserver",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-ukrainian",
+        "usernamehw.errorlens",
+        "sonarsource.sonarlint-vscode"
+  ],
+  "postCreateCommand": "yarn install && curl -LsSf https://astral.sh/uv/install.sh | sh && npm install -g @go-task/cli && cd django && uv sync --all-extras"
+}

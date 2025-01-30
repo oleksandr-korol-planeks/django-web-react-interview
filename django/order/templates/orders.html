@@ -1,0 +1,68 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<style>
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+</style>
+
+    <div class="container">
+        <div class="d-flex flex-column">
+            <h1>
+
+
+                <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+            </h1>
+        <div style="text-align: center;">Orders</div>
+        <table class="table" id="all_orders">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Product</th>
+              <th scope="col">Created at</th>
+            </tr>
+          </thead>
+            {% for order in orders %}
+              <tbody>
+                <tr>
+
+                  <td>{{order.user.first_name}}</td>
+                  <td>{{order.user.email}}</td>
+                  <td>{{order.product.name}}</td>
+                  <td>{{order.created_at}}</td>
+
+                </tr>
+              </tbody>
+            {% endfor %}
+
+            </table>
+
+
+        </div>
+    </div>
+
+{% endblock content%}

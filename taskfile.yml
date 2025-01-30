@@ -1,0 +1,18 @@
+version: "3"
+dotenv: [".env"]
+tasks:
+  start.django:
+    desc: "Start django server"
+    dir: django
+    cmds:
+      - uv run python manage.py runserver
+  django.manage:
+    desc: "Run django manage command"
+    dir: django
+    cmds:
+      - uv run python manage.py {{.CLI_ARGS}}
+  start.react:
+    desc: "Start react server"
+    dir: react
+    cmds:
+      - yarn run dev
