@@ -19,5 +19,5 @@
         "usernamehw.errorlens",
         "sonarsource.sonarlint-vscode"
   ],
-  "postCreateCommand": "yarn install && curl -LsSf https://astral.sh/uv/install.sh | sh && npm install -g @go-task/cli && cd django && uv sync --all-extras"
+  "postCreateCommand": "cd react && yarn install && curl -LsSf https://astral.sh/uv/install.sh | sh && cd django && uv sync --all-extras && npm install -g @go-task/cli"
 }
